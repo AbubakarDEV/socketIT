@@ -1,0 +1,446 @@
+/* #292561 blue */
+/* #da5233 orange */
+
+.b-border{
+	width: 100px;
+	height: 5px;
+	background-color: #292561;
+	margin: auto;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #F8F8F8;
+	/* border-radius: 5px; */
+}
+.btn{
+	border:1px solid #292561;
+	margin-right: 5px;
+	color: #292561;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-size: 15px;
+	display: inline-block;
+	transition: all 1s ease;
+}
+.btn:after{
+	background: #292561;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	z-index: -1;
+
+	transition: all 1s ease;
+}
+.btn:hover{
+	color: #da5233;
+}
+.btn:hover:after{
+	width: 100%;
+}
+
+h1,h2{
+	color:#292561 ;
+	font-weight: 900;
+	
+}
+
+P{
+	font-size: 17px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+
+}
+html,body{
+	background:white;
+	overflow-x:hidden;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+
+ul,ol{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a{
+
+	text-decoration:none;
+	color:white;
+	cursor: pointer;
+	
+}
+
+
+ a:hover,a:focus{
+	 color:#da5233;
+	 text-decoration: underline;
+	 
+ }
+
+h3,h4,h5,h6{
+	color:white;
+} 
+
+.navbar{
+
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: .1rem; 
+	height: 70px;
+	background:#292561;
+}
+
+.navbar-brand img{
+	height: 60px;
+	width: 60px;
+
+}
+
+.navbar-brand{
+	
+	padding-left: 80px;
+	
+}
+.navbar-nav li{
+	padding-right: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #da5233;
+	text-decoration:underline;
+	
+}
+/* div space */
+.navsp{
+	margin-top: 50px;
+}
+
+
+.flexslider{
+	margin-top: 66px;
+}
+
+
+
+
+/* about us */
+.img-wrap{
+	margin: auto;
+}
+.img-wrap img{
+	width: 100%;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px;
+}
+
+/* aboutus end here */
+
+
+
+
+
+
+
+
+
+/* team */
+.team-img img{
+	padding-top: 10px;
+	width: 100px;
+	height: 100px;
+}
+.card-deck .card{
+	height: 180px;
+	/* margin-bottom: 20px; */
+}
+
+#services .card{
+	box-shadow: 0px 5px 5px 0px;
+
+	height: 220px;
+	width: 350px;
+	margin: 5px;
+}
+
+/* for input */
+label[for='email']{
+	font-size: 20px;
+}
+
+
+
+
+/* portfolio */
+.portfolio .portfolio-item {
+	margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+	padding: 0;
+	margin: 0 auto 25px auto;
+	list-style: none;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+	padding: 2px 15px;
+  }
+  
+  .portfolio #portfolio-flters li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #292561;
+	margin-bottom: 5px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+	color:#da5233;
+  }
+  
+  .portfolio #portfolio-flters li:last-child {
+	margin-right: 0;
+  }
+  
+  .portfolio .portfolio-wrap {
+	transition: 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: rgba(69, 80, 91, 0.8);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+	content: "";
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	bottom: 30px;
+	transition: all ease-in-out 0.3s;
+	z-index: 2;
+	opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 3;
+	transition: all ease-in-out 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info::before {
+	display: block;
+	content: "";
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 35px;
+	left: 35px;
+	border-top: 3px solid #d7dce1;
+	border-left: 3px solid #d7dce1;
+	transition: all 0.5s ease 0s;
+	z-index: 9994;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info::after {
+	display: block;
+	content: "";
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	bottom: 35px;
+	right: 35px;
+	border-bottom: 3px solid #d7dce1;
+	border-right: 3px solid #d7dce1;
+	transition: all 0.5s ease 0s;
+	z-index: 9994;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+	font-size: 20px;
+	color: #292561;
+	font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+	color: #292561;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+	text-align: center;
+	z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+	color: #292561;
+	margin: 0 2px;
+	font-size: 28px;
+	display: inline-block;
+	transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+	color: #da5233;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+	opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info::before {
+	top: 15px;
+	left: 15px;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info::after {
+	bottom: 15px;
+	right: 15px;
+  }
+  /* .portfolio ends here  */
+
+
+
+
+  
+/* footer */
+.socket-footer{
+	background-color:#292561;
+}
+
+/* footer ends here */
+
+
+
+/* team section */
+.box{
+	width: 250px;
+	margin: 10px auto;
+	/* padding: 0; */
+	position: relative;
+	overflow: hidden;
+	position: relative;
+	/* box-shadow: 0 0 5px green; */
+}
+
+.box:before,
+.box:after{
+	content:"";
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+
+	transition: all 1s;
+}
+.box:before{
+	bottom: 5%;
+	left: 5%;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	
+}
+.box:after{
+	top: 5%;
+	right: 5%;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	
+}
+
+
+.box:hover:before,
+.box:hover:after{
+	opacity: 1;
+	width: 90%;
+	height: 90%;
+
+}
+
+
+.box img{
+	width: 250px;
+	height: 250px;
+	/* margin: 10px auto; */
+	transform: scale(1);
+	display: block;
+	transition: all 0.6s;
+}
+.box:hover img{
+	transform: scale(1.2);
+}
+
+.box .box-content{
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
+	left: 16px;
+	color: white;
+}
+
+.box .name,
+.box .post{
+	display: block;
+	font-size: 16px;
+	margin: 0;
+	opacity: 1;
+	position: absolute;
+	bottom: 0;
+	/* left: 5px; */
+	transition: all 0.5s;
+}
+
+.box .post,
+.box:hover .name{
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.box:hover .post{
+	opacity: 1;
+}
+
+/* our team ends */
